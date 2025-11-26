@@ -1,0 +1,275 @@
+/* ===============================
+   ESTILO PRINCIPAL REVISADO
+=============================== */
+
+/* --- Reset / Base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Container padrão --- */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* ===============================
+   HEADER / NAVBAR
+=============================== */
+
+header {
+  background: #0b4f2c;
+  color: white;
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  background: rgba(255,255,255,0.15);
+}
+
+/* --- OFFSET PARA O CONTEÚDO (quando usar header sticky) --- */
+.main-content {
+  padding-top: 100px;
+}
+
+/* ===============================
+   BANNERS / HERO / PAGE-BANNER
+=============================== */
+
+.page-banner {
+  background: linear-gradient(135deg, #0b4f2c, #1b7c4e);
+  color: #fff;
+  text-align: center;
+  padding: 80px 15px;
+  margin-bottom: 40px;
+}
+
+.page-banner h2 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.page-banner p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===============================
+   SEÇÕES / TEXTOS / CARDS
+=============================== */
+
+.section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #0b4f2c;
+  margin-bottom: 16px;
+}
+
+.section p {
+  margin-bottom: 16px;
+}
+
+.section ul {
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+}
+
+/* ===============================
+   IMAGENS
+=============================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* ===============================
+   BOTÕES / LINKS
+=============================== */
+
+.btn {
+  display: inline-block;
+  background: #0b4f2c;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #136e3f;
+  transform: translateY(-2px);
+}
+
+.btn.small {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+/* ===============================
+   GRIDS / GALERIA / LAYOUTS
+=============================== */
+
+.cards-grid,
+.galeria-grid,
+.protecao-grid,
+.grid-3 {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 960px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===============================
+   FORMULÁRIOS (CONTATO)
+=============================== */
+
+form {
+  background: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  max-width: 600px;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+form button {
+  cursor: pointer;
+}
+
+/* ===============================
+   MAPA CONTAINER (GOOGLE MAPS)
+=============================== */
+
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+
+footer {
+  background: #0b4f2c;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 50px;
+}
+
+/* ===============================
+   RESPONSIVIDADE
+=============================== */
+
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .page-banner h2 {
+    font-size: 2.2rem;
+  }
+}

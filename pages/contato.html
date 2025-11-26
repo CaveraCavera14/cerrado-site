@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Cerrado Vivo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Cerrado Vivo</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="fauna.html">Fauna</a></li>
+                <li><a href="flora.html">Flora</a></li>
+                <li><a href="especies.html">Espécies</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="protecao.html">Proteção</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h1>Contato</h1>
+        <p>Entre em contato para dúvidas, sugestões ou colaborações.</p>
+    </section>
+
+    <!-- CONTEÚDO -->
+    <section class="conteudo">
+        <div class="container">
+
+            <h2>Fale Conosco</h2>
+            <p>
+                Utilize o formulário abaixo para enviar sua mensagem. Retornaremos o mais rápido possível!
+            </p>
+
+            <form class="form-contato" action="#" method="post">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+
+            <h2>Outros meios de contato</h2>
+
+            <ul class="lista-contato">
+                <li><strong>Email:</strong> contato@cerradovivo.org</li>
+                <li><strong>Telefone:</strong> (61) 90000-0000</li>
+                <li><strong>Endereço:</strong> Brasília - DF, Brasil</li>
+            </ul>
+
+            <!-- MAPA 360° -->
+            <h2>Localização (360°)</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!4v1732664439142!6m8!1m7!1sCAoSLEFGMVFpcFBKT1NtN0h6RVlCakRSN2pNQ2dGN1NjdGxFWGhsZGxRZ3E2c001!2m2!1d-22.8930406!2d-47.0624289!3f16.63!4f1.21!5f0.78" 
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Cerrado Vivo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
